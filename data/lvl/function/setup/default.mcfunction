@@ -6,9 +6,16 @@ scoreboard players set lvl_Setting lvl_Version 15
 function lvl:setup/walking
 
 #Distance in Blocks to reach Level
-scoreboard players set Walking_1 lvl_Requirements 12000
-scoreboard players set Walking_2 lvl_Requirements 40000
-scoreboard players set Walking_3 lvl_Requirements 100000
+scoreboard players set Walking_1 lvl_Requirements 10000
+scoreboard players set Walking_2 lvl_Requirements 25000
+scoreboard players set Walking_3 lvl_Requirements 45000
+scoreboard players set Walking_4 lvl_Requirements 70000
+scoreboard players set Walking_5 lvl_Requirements 100000
+scoreboard players set Walking_6 lvl_Requirements 135000
+scoreboard players set Walking_7 lvl_Requirements 175000
+scoreboard players set Walking_8 lvl_Requirements 220000
+scoreboard players set Walking_9 lvl_Requirements 280000
+scoreboard players set Walking_10 lvl_Requirements 350000
 
 #Sprinting
 function lvl:setup/sprinting
