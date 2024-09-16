@@ -3,8 +3,15 @@ schedule function lvl:minute 60s
 
 #Sprint
 execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=1..,lvl_Sprintf=1}] minecraft:saturation 1 0 true
-execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=2..,lvl_Sprintf=2}] minecraft:saturation 2 0 true
-execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=3..,lvl_Sprintf=3}] minecraft:saturation 3 0 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=2..,lvl_Sprintf=2}] minecraft:saturation 1 1 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=3..,lvl_Sprintf=3}] minecraft:saturation 1 2 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=4..,lvl_Sprintf=4}] minecraft:saturation 1 3 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=5..,lvl_Sprintf=5}] minecraft:saturation 1 4 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=6..,lvl_Sprintf=6}] minecraft:saturation 1 5 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=7..,lvl_Sprintf=7}] minecraft:saturation 1 6 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=8..,lvl_Sprintf=8}] minecraft:saturation 1 7 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=9..,lvl_Sprintf=9}] minecraft:saturation 1 8 true
+execute if score lvl_Setting lvl_Sprint matches 1 run effect give @a[scores={lvl_Sprint=10..,lvl_Sprintf=10}] minecraft:saturation 1 9 true
 
 
 #Combat

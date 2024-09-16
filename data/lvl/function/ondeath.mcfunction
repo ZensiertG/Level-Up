@@ -53,7 +53,7 @@ execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Wal
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=8..,lvl_Walkf=8}] minecraft:generic.movement_speed modifier add level-speed-8 .025 add_value
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=9..,lvl_Walkf=9}] minecraft:generic.movement_efficency modifier add level-speed-9 .25 add_value
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=10..,lvl_Walkf=10}] minecraft:generic.movement_efficency modifier add level-speed-10 .25 add_value
-# /attribute Zensiert_Gamer minecraft:generic.movement_speed modifier add speed .05 add_value
+
 #Swim
 execute if score lvl_Setting lvl_Swim matches 1 run effect give @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:dolphins_grace infinite 0 true
 
