@@ -24,7 +24,14 @@ function lvl:setup/jumping
 #Number of Jumps to reach Level
 scoreboard players set Jumping_1 lvl_Requirements 2000
 scoreboard players set Jumping_2 lvl_Requirements 6000
-scoreboard players set Jumping_3 lvl_Requirements 15000
+scoreboard players set Jumping_3 lvl_Requirements 10000
+scoreboard players set Jumping_4 lvl_Requirements 15000
+scoreboard players set Jumping_5 lvl_Requirements 20000
+scoreboard players set Jumping_6 lvl_Requirements 30000
+scoreboard players set Jumping_7 lvl_Requirements 40000
+scoreboard players set Jumping_8 lvl_Requirements 55000
+scoreboard players set Jumping_9 lvl_Requirements 70000
+scoreboard players set Jumping_10 lvl_Requirements 100000
 
 #Swimming
 function lvl:setup/swimming

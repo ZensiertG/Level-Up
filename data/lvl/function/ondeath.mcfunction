@@ -15,8 +15,6 @@ execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_M
 execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=9..,lvl_Miningf=9}] minecraft:player.mining_efficiency modifier add level-mining-9 16 add_value # 81 - unenchanted Netherite instamine Deepslate
 execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=10..,lvl_Miningf=10}] minecraft:player.mining_efficiency modifier add level-mining-10 19 add_value # 100 - unenchanted Diamond instamine Deepslate
 
-# /attribute @s minecraft:player.mining_efficiency modifier add mining 10 add_value
-
 #Player
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=1..,lvl_Heartsf=1}] minecraft:generic.max_health modifier add level-player-5 2 add_value
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=2..,lvl_Heartsf=2}] minecraft:generic.max_health modifier add level-player-10 4 add_value
@@ -33,9 +31,16 @@ execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Resis
 execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Fire matches 1 run effect give @s[scores={lvl_Fire=1..,lvl_Firef=1}] minecraft:fire_resistance infinite 0 true
 
 #Jump
-execute if score lvl_Setting lvl_Jump matches 1 run effect give @s[scores={lvl_Jump=1..,lvl_Jumpf=1}] minecraft:jump_boost infinite 0 true
-execute if score lvl_Setting lvl_Jump matches 1 run effect give @s[scores={lvl_Jump=2..,lvl_Jumpf=2}] minecraft:jump_boost infinite 1 true
-execute if score lvl_Setting lvl_Jump matches 1 run effect give @s[scores={lvl_Jump=3..,lvl_Jumpf=3}] minecraft:jump_boost infinite 2 true
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=1..,lvl_Jumpf=1}] minecraft:generic.jump_strength modifier add level-jump 0.06 add_value # 1.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=2..,lvl_Jumpf=2}] minecraft:generic.jump_strength modifier add level-jump 0.14 add_value # 2 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=3..,lvl_Jumpf=3}] minecraft:generic.jump_strength modifier add level-jump 0.2 add_value # 2.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=4..,lvl_Jumpf=4}] minecraft:generic.jump_strength modifier add level-jump 0.28 add_value # 3 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=5..,lvl_Jumpf=5}] minecraft:generic.jump_strength modifier add level-jump 0.33 add_value # 3.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=6..,lvl_Jumpf=6}] minecraft:generic.jump_strength modifier add level-jump 0.39 add_value # 4 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=7..,lvl_Jumpf=7}] minecraft:generic.jump_strength modifier add level-jump 0.44 add_value # 4.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=8..,lvl_Jumpf=8}] minecraft:generic.jump_strength modifier add level-jump 0.5 add_value # 5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=9..,lvl_Jumpf=9}] minecraft:generic.jump_strength modifier add level-jump 0.54 add_value # 5.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=10..,lvl_Jumpf=10}] minecraft:generic.jump_strength modifier add level-jump 0.59 add_value # 6 Blocks
 
 #Walk
 execute if score lvl_Setting lvl_Walk matches 1 run effect give @s[scores={lvl_Walk=1..,lvl_Walkf=1}] minecraft:speed infinite 0 true
