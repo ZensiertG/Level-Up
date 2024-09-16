@@ -51,19 +51,31 @@ scoreboard players set Jumping_10 lvl_Requirements 100000
 function lvl:setup/swimming
 
 #Distance in Blocks to reach Level
-scoreboard players set Swimming_1 lvl_Requirements 100000
-scoreboard players set Swimming_2 lvl_Requirements 1500000
+scoreboard players set Swimming_1 lvl_Requirements 10000
+scoreboard players set Swimming_2 lvl_Requirements 20000
+scoreboard players set Swimming_3 lvl_Requirements 35000
+scoreboard players set Swimming_4 lvl_Requirements 50000
+scoreboard players set Swimming_5 lvl_Requirements 75000
+scoreboard players set Swimming_6 lvl_Requirements 110000
+scoreboard players set Swimming_7 lvl_Requirements 150000
+scoreboard players set Swimming_8 lvl_Requirements 200000
+scoreboard players set Swimming_9 lvl_Requirements 275000
+scoreboard players set Swimming_10 lvl_Requirements 400000
 
 #Diving
 function lvl:setup/diving
 
 #Time spent underwater to reach Level
-scoreboard players set Diving_1 lvl_Requirements 900
-scoreboard players set Diving_2 lvl_Requirements 2100
-scoreboard players set Diving_3 lvl_Requirements 3600
-scoreboard players set Diving_4 lvl_Requirements 5400
-scoreboard players set Diving_5 lvl_Requirements 7500
-scoreboard players set Diving_6 lvl_Requirements 9900
+scoreboard players set Diving_1 lvl_Requirements 15 # 15m +20
+scoreboard players set Diving_2 lvl_Requirements 35 # 35m +25
+scoreboard players set Diving_3 lvl_Requirements 60 # 60m +30
+scoreboard players set Diving_4 lvl_Requirements 90 # 90m +35
+scoreboard players set Diving_5 lvl_Requirements 125 # 125m +40
+scoreboard players set Diving_6 lvl_Requirements 165 # 165m +45
+scoreboard players set Diving_7 lvl_Requirements 210 # 210m +50
+scoreboard players set Diving_8 lvl_Requirements 260 # 260m +55
+scoreboard players set Diving_9 lvl_Requirements 315 # 315m +60
+scoreboard players set Diving_10 lvl_Requirements 375 # 375m 
 
 #Swimming + Diving
 function lvl:setup/swimming_diving

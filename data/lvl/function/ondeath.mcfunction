@@ -45,16 +45,25 @@ execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jum
 #Walk
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=1..,lvl_Walkf=1}] minecraft:generic.movement_speed modifier add level-speed-1 .025 add_value
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=2..,lvl_Walkf=2}] minecraft:generic.movement_speed modifier add level-speed-2 .025 add_value
-execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=3..,lvl_Walkf=3}] minecraft:generic.movement_efficency modifier add level-speed-3 .25 add_value
+execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=3..,lvl_Walkf=3}] minecraft:generic.movement_efficiency modifier add level-speed-3 .25 add_value
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=4..,lvl_Walkf=4}] minecraft:generic.movement_speed modifier add level-speed-4 .025 add_value
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=5..,lvl_Walkf=5}] minecraft:generic.movement_speed modifier add level-speed-5 .025 add_value
-execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=6..,lvl_Walkf=6}] minecraft:generic.movement_efficency modifier add level-speed-6 .25 add_value
+execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=6..,lvl_Walkf=6}] minecraft:generic.movement_efficiency modifier add level-speed-6 .25 add_value
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=7..,lvl_Walkf=7}] minecraft:generic.movement_speed modifier add level-speed-7 .025 add_value
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=8..,lvl_Walkf=8}] minecraft:generic.movement_speed modifier add level-speed-8 .025 add_value
-execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=9..,lvl_Walkf=9}] minecraft:generic.movement_efficency modifier add level-speed-9 .25 add_value
-execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=10..,lvl_Walkf=10}] minecraft:generic.movement_efficency modifier add level-speed-10 .25 add_value
+execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=9..,lvl_Walkf=9}] minecraft:generic.movement_efficiency modifier add level-speed-9 .25 add_value
+execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=10..,lvl_Walkf=10}] minecraft:generic.movement_efficiency modifier add level-speed-10 .25 add_value
 
 #Swim
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-1 .1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-2 .1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-3 .1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-4 .1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:generic.water_movement_efficiency modifier add level-swim-5 1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-6 .1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-7 .1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-8 .1 add_value
+execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:player.submerged_mining_speed modifier add level-swim-9 .1 add_value
 execute if score lvl_Setting lvl_Swim matches 1 run effect give @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] minecraft:dolphins_grace infinite 0 true
 
 #Swim + Diving
