@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Zen's Datapacks",
+            "color": "green",
+            "bold": true,
+            "obfuscated": false
+        },
+        "description": {
+            "text": "Thanks for installing my Data Pack(s) :)"
+        },
+        "icon": {
+            "id": "minecraft:crafting_table"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ]
+}

@@ -1,0 +1,4 @@
+scoreboard objectives remove lvl_Player
+scoreboard objectives remove lvl_Hearts
+scoreboard objectives remove lvl_Heartsf
+scoreboard objectives remove lvl_Heartsfs

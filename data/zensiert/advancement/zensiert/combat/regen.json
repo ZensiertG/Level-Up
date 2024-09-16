@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Regeneration"
+        },
+        "description": {
+            "text": "Unlocked Combat Level 5"
+        },
+        "icon": {
+            "id": "minecraft:potion"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {
+        "function": "lvl:advancements/skills/combat/regen"
+    },
+    "parent": "zensiert:zensiert/combat"
+}

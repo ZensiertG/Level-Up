@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "scoreboard": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "scoreboard"
+        ]
+    ],
+    "rewards": {
+        "function": "lvl:advancements/skills/walking/3"
+    },
+    "parent": "zensiert:zensiert/walking"
+}

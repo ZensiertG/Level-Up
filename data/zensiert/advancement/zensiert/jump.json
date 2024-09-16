@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Jumping"
+        },
+        "description": {
+            "text": "Unlocked Jumping Skill"
+        },
+        "icon": {
+            "id": "minecraft:rabbit_foot"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "lvl:advancements/skills/jump/1"
+    },
+    "parent": "zensiert:zensiert/level_up"
+}

@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "scoreboard": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "scoreboard"
+        ]
+    ],
+    "rewards": {
+        "function": "lvl:advancements/skills/sprint/2"
+    },
+    "parent": "zensiert:zensiert/sprint"
+}

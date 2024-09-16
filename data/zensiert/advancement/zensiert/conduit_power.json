@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Conduit Power",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "You reached Swim lvl 2 and Diving lvl 6. Congrats, now you can enjoy conduit power.",
+            "color": "light_purple"
+        },
+        "icon": {
+            "id": "minecraft:heart_of_the_sea"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "lvl": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "lvl:advancements/conduit_power"
+    },
+    "parent": "zensiert:zensiert/diving"
+}

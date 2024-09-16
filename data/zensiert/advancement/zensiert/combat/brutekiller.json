@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "lvl:advancements/skills/combat/combatupgrade"
+    },
+    "parent": "zensiert:zensiert/combat"
+}

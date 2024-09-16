@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Diving"
+        },
+        "description": {
+            "text": "Unlocked Diving Skill"
+        },
+        "icon": {
+            "id": "minecraft:bubble_coral"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "lvl:advancements/skills/diving/1"
+    },
+    "parent": "zensiert:zensiert/level_up"
+}

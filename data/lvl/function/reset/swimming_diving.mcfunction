@@ -1,0 +1,2 @@
+function lvl:uninstall/swimming_diving
+function lvl:setup/swimming_diving

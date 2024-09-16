@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Extra Hearts"
+        },
+        "description": {
+            "text": "Unlocked Player Level 5"
+        },
+        "icon": {
+            "id": "minecraft:potion"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {
+        "function": "lvl:advancements/skills/player/hearts"
+    },
+    "parent": "zensiert:zensiert/level_up"
+}

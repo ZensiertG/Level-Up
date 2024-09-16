@@ -1,0 +1,10 @@
+
+scoreboard objectives remove lvl_Diving_t
+scoreboard objectives remove lvl_Diving_s
+scoreboard objectives remove lvl_Diving_m
+scoreboard objectives remove lvl_Diving_m_display
+scoreboard objectives remove lvl_Diving_h
+scoreboard objectives remove lvl_Diving
+scoreboard objectives remove lvl_Divingf 
+scoreboard objectives remove lvl_Divingfs 
+scoreboard objectives remove lvl_air

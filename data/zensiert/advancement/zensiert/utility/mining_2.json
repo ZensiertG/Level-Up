@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "scoreboard": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "scoreboard"
+        ]
+    ],
+    "rewards": {
+        "function": "lvl:advancements/skills/mining/2"
+    },
+    "parent": "zensiert:zensiert/mining"
+}

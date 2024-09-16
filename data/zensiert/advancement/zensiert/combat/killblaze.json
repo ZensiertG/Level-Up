@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Blaze Killer",
+            "color": "gold"
+        },
+        "description": {
+            "text": "You killed 100 Blazes. wow. Fire Resistance granted ; )",
+            "color": "yellow"
+        },
+        "icon": {
+            "id": "minecraft:blaze_rod"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": true
+    },
+    "criteria": {
+        "lvl": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "lvl:advancements/skills/combat/blazekiller"
+    },
+    "parent": "zensiert:zensiert/combat"
+}

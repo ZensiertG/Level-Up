@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Dragonkiller",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Kill the Enderdragon"
+        },
+        "icon": {
+            "id": "minecraft:dragon_head"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "lvl": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "lvl:advancements/skills/combat/bosskill"
+    },
+    "parent": "zensiert:zensiert/combat"
+}

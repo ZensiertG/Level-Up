@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Wardenkiller",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Kill the Warden"
+        },
+        "icon": {
+            "id": "minecraft:sculk_shrieker"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "lvl": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "lvl:advancements/skills/combat/bosskill"
+    },
+    "parent": "zensiert:zensiert/combat"
+}

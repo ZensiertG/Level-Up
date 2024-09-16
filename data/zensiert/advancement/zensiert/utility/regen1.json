@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {
+        "function": "lvl:advancements/regenupgrade"
+    },
+    "parent": "zensiert:zensiert/combat/regen"
+}
