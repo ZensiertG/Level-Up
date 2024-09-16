@@ -53,7 +53,14 @@ function lvl:setup/mining
 #Number of mined Blocks (Ores/Stone) to reach Level
 scoreboard players set Mining_1 lvl_Requirements 2000
 scoreboard players set Mining_2 lvl_Requirements 5000
-scoreboard players set Mining_3 lvl_Requirements 15000
+scoreboard players set Mining_3 lvl_Requirements 10000
+scoreboard players set Mining_4 lvl_Requirements 20000
+scoreboard players set Mining_5 lvl_Requirements 40000
+scoreboard players set Mining_6 lvl_Requirements 50000
+scoreboard players set Mining_7 lvl_Requirements 70000
+scoreboard players set Mining_8 lvl_Requirements 80000
+scoreboard players set Mining_9 lvl_Requirements 130000
+scoreboard players set Mining_10 lvl_Requirements 150000
 
 #Combat
 function lvl:setup/combat

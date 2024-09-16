@@ -1,8 +1,21 @@
 
-#Mining
-execute if score lvl_Setting lvl_Mining matches 1 run effect give @s[scores={lvl_Mining=1..,lvl_Miningf=1}] minecraft:haste infinite 0 true # 5
-execute if score lvl_Setting lvl_Mining matches 1 run effect give @s[scores={lvl_Mining=2..,lvl_Miningf=2}] minecraft:haste infinite 1 true # 11 (10 netherite)
-execute if score lvl_Setting lvl_Mining matches 1 run effect give @s[scores={lvl_Mining=3..,lvl_Miningf=3}] minecraft:haste infinite 2 true # 56 deepslate (55 netherite)
+#Mining 
+# Instamine Stone - Diamond: 11
+# Instamine Stone - Netherte: 10
+# Instamine Deepslate - Diamond: 56
+# Instamine Deepslate - Netherite: 55
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=1..,lvl_Miningf=1}] minecraft:player.mining_efficiency modifier add level-mining-1 5 add_value # 5
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=2..,lvl_Miningf=2}] minecraft:player.mining_efficiency modifier add level-mining-2 5 add_value # 10 - Netherite instamine stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=3..,lvl_Miningf=3}] minecraft:player.mining_efficiency modifier add level-mining-3 5 add_value # 15 - Diamond Instamine Stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=4..,lvl_Miningf=4}] minecraft:player.mining_efficiency modifier add level-mining-4 10 add_value # 25
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=5..,lvl_Miningf=5}] minecraft:player.mining_efficiency modifier add level-mining-5 11 add_value # 36 - unenchanted Netherite instamine stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=6..,lvl_Miningf=6}] minecraft:player.mining_efficiency modifier add level-mining-6 9 add_value # 45 - unechanted Diamond instamine stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=7..,lvl_Miningf=7}] minecraft:player.mining_efficiency modifier add level-mining-7 10 add_value # 55 - Netherite Instamine Deepslate
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=8..,lvl_Miningf=8}] minecraft:player.mining_efficiency modifier add level-mining-8 10 add_value # 65 - Diamond Instamine Deepslate
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=9..,lvl_Miningf=9}] minecraft:player.mining_efficiency modifier add level-mining-9 16 add_value # 81 - unenchanted Netherite instamine Deepslate
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=10..,lvl_Miningf=10}] minecraft:player.mining_efficiency modifier add level-mining-10 19 add_value # 100 - unenchanted Diamond instamine Deepslate
+
+# /attribute @s minecraft:player.mining_efficiency modifier add mining 10 add_value
 
 #Player
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=1..,lvl_Heartsf=1}] minecraft:generic.max_health modifier add level-player-5 2 add_value
