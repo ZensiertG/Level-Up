@@ -1,26 +1,47 @@
 {
     "display": {
-        "title": {
-            "text": "Sprint"
-        },
-        "description": {
-            "text": "Unlocked Sprint Skill"
-        },
-        "icon": {
-            "id": "minecraft:feather"
-        },
-        "frame": "task",
-        "show_toast": false,
-        "announce_to_chat": true,
-        "hidden": true
+      "icon": {
+        "id": "minecraft:feather"
+      },
+      "title": {
+        "text": "Sprint"
+      },
+      "description": {
+        "text": "Unlocked Sprint Skill - Periodically gives you Saturation"
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": true,
+      "hidden": true
     },
+    "parent": "zensiert:zensiert/level_up",
     "criteria": {
-        "tick": {
-            "trigger": "minecraft:impossible"
+      "tick": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_Sprint_block": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Sprinting_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ]
         }
+      }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/sprint/1"
-    },
-    "parent": "zensiert:zensiert/level_up"
-}
+      "function": "lvl:advancements/skills/sprint/1"
+    }
+  }
+  

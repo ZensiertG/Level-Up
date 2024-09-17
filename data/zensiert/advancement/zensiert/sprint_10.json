@@ -1,7 +1,23 @@
 {
-    "parent": "zensiert:zensiert/sprint",
+    "display": {
+      "icon": {
+        "id": "minecraft:feather"
+      },
+      "title": {
+        "text": "Sprint X",
+        "color": "aqua"
+      },
+      "description": {
+        "text": "Periodically gives you Saturation"
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "zensiert:zensiert/sprint_5",
     "criteria": {
-      "scoreboard": {
+      "tick": {
         "trigger": "minecraft:tick",
         "conditions": {
           "player": [
@@ -14,7 +30,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Sprinting_3"
+                      "name": "Sprinting_10"
                     },
                     "score": "lvl_Requirements"
                   }

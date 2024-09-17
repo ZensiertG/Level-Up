@@ -14,7 +14,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Sprinting_3"
+                      "name": "Sprinting_9"
                     },
                     "score": "lvl_Requirements"
                   }
