@@ -1,4 +1,21 @@
 {
+    "display": {
+      "icon": {
+        "id": "minecraft:netherite_boots"
+      },
+      "title": {
+        "text": "Walking X",
+        "color": "green"
+      },
+      "description": {
+        "text": "Reduces slowing on Soulsand and Honeyblocks by 100%"
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "zensiert:zensiert/walk_9",
     "criteria": {
       "tick": {
         "trigger": "minecraft:tick",
@@ -13,7 +30,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Walking_2"
+                      "name": "Walking_10"
                     },
                     "score": "lvl_Requirements"
                   }
@@ -25,7 +42,7 @@
       }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/walking/upgrade"
-    },
-    "parent": "zensiert:zensiert/walking"
-}
+      "function": "lvl:advancements/skills/walking/upgrade"
+    }
+  }
+  

@@ -13,7 +13,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Walking_2"
+                      "name": "Walking_5"
                     },
                     "score": "lvl_Requirements"
                   }

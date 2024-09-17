@@ -37,16 +37,6 @@ execute as @a unless score @s lvl_Sprintf = @s lvl_Sprintfs run scoreboard playe
 execute as @a run scoreboard players operation @s lvl_Sprintfs = @s lvl_Sprintf
 
 #Walk
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_1 lvl_Requirements run advancement grant @s only zensiert:zensiert/walking
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_2 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/walk_2
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_3 lvl_Requirements run advancement grant @s only zensiert:zensiert/walk_3
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_4 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/walk_4
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_5 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/walk_5
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_6 lvl_Requirements run advancement grant @s only zensiert:zensiert/walk_6
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_7 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/walk_7
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_8 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/walk_8
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_9 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/walk_9
-execute as @a if score lvl_Setting lvl_Walk matches 1 if score @s lvl_Walk_block >= Walking_10 lvl_Requirements run advancement grant @s only zensiert:zensiert/walk_10
 execute as @a unless score @s lvl_Walk >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/walking
 
 #Sprint
