@@ -43,16 +43,6 @@ execute as @a unless score @s lvl_Walk >= 1 lvl_math run advancement revoke @s f
 execute as @a unless score @s lvl_Sprint >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/sprint
 
 #Jump
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_1 lvl_Requirements run advancement grant @s only zensiert:zensiert/jump
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_2 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/jump_2
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_3 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/jump_3
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_4 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/jump_4
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_5 lvl_Requirements run advancement grant @s only zensiert:zensiert/jump_5
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_6 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/jump_6
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_7 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/jump_7
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_8 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/jump_8
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_9 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/jump_9
-execute as @a if score lvl_Setting lvl_Jump matches 1 if score @s lvl_Jumps >= Jumping_10 lvl_Requirements run advancement grant @s only zensiert:zensiert/jump_10
 execute as @a unless score @s lvl_Jump >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/jump
 
 #Swim

@@ -4,18 +4,18 @@
         "id": "minecraft:rabbit_foot"
       },
       "title": {
-        "text": "Jumping",
-        "color": "green"
+        "text": "Jumping X",
+        "color": "black"
       },
       "description": {
-        "text": "Unlocked Jumping Skill - Increases Jump Height"
+        "text": "Reduces Fall Damage by 100%"
       },
       "frame": "task",
       "show_toast": false,
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "zensiert:zensiert/level_up",
+    "parent": "zensiert:zensiert/jump_9",
     "criteria": {
       "a": {
         "trigger": "minecraft:tick",
@@ -30,7 +30,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Jumping_1"
+                      "name": "Jumping_10"
                     },
                     "score": "lvl_Requirements"
                   }
@@ -42,7 +42,7 @@
       }
     },
     "rewards": {
-      "function": "lvl:advancements/skills/jump/1"
+      "function": "lvl:advancements/skills/jump/upgrade"
     }
   }
   

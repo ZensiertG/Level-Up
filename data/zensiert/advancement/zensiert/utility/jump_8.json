@@ -1,23 +1,7 @@
 {
-    "display": {
-      "icon": {
-        "id": "minecraft:rabbit_foot"
-      },
-      "title": {
-        "text": "Jumping",
-        "color": "green"
-      },
-      "description": {
-        "text": "Unlocked Jumping Skill - Increases Jump Height"
-      },
-      "frame": "task",
-      "show_toast": false,
-      "announce_to_chat": true,
-      "hidden": false
-    },
-    "parent": "zensiert:zensiert/level_up",
+    "parent": "zensiert:zensiert/jump",
     "criteria": {
-      "a": {
+      "scoreboard": {
         "trigger": "minecraft:tick",
         "conditions": {
           "player": [
@@ -30,7 +14,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Jumping_1"
+                      "name": "Jumping_8"
                     },
                     "score": "lvl_Requirements"
                   }
@@ -42,7 +26,7 @@
       }
     },
     "rewards": {
-      "function": "lvl:advancements/skills/jump/1"
+      "function": "lvl:advancements/skills/jump/upgrade"
     }
   }
   
