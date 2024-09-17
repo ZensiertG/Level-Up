@@ -1,27 +1,60 @@
 {
     "display": {
-        "title": {
-            "text": "Witherkiller",
-            "color": "dark_purple"
-        },
-        "description": {
-            "text": "Kill the Wither"
-        },
-        "icon": {
-            "id": "minecraft:wither_skeleton_skull"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true
-    },
-    "criteria": {
-        "lvl": {
-            "trigger": "minecraft:impossible"
+      "icon": {
+        "id": "minecraft:player_head",
+        "count": 1,
+        "components": {
+          "minecraft:profile": {
+            "properties": [
+              {
+                "name": "textures",
+                "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNiNmJiNTNlMzNkYjJjMTlhZTg4YjVjZTdlMjRlOGI1ZjMxMzdjNDExYjRmNzA0ZjBhZWJkNWRlZWUxNTY5NCJ9fX0="
+              }
+            ]
+          }
         }
+      },
+      "title": {
+        "text": "Wither Killer",
+        "color": "dark_purple"
+      },
+      "description": "Kill the Wither",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "zensiert:zensiert/combat/killblaze",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_KillWither": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Wither_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ],
+          "entity": {
+            "type": "minecraft:wither"
+          }
+        }
+      }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/combat/bosskill"
-    },
-    "parent": "zensiert:zensiert/combat"
-}
+      "function": "lvl:advancements/skills/combat/bosskill"
+    }
+  }
+  

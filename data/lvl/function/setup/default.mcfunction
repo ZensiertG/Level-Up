@@ -66,16 +66,16 @@ scoreboard players set Swimming_10 lvl_Requirements 400000
 function lvl:setup/diving
 
 #Time spent underwater to reach Level
-scoreboard players set Diving_1 lvl_Requirements 15 # 15m +20
-scoreboard players set Diving_2 lvl_Requirements 35 # 35m +25
-scoreboard players set Diving_3 lvl_Requirements 60 # 60m +30
-scoreboard players set Diving_4 lvl_Requirements 90 # 90m +35
-scoreboard players set Diving_5 lvl_Requirements 125 # 125m +40
-scoreboard players set Diving_6 lvl_Requirements 165 # 165m +45
-scoreboard players set Diving_7 lvl_Requirements 210 # 210m +50
-scoreboard players set Diving_8 lvl_Requirements 260 # 260m +55
-scoreboard players set Diving_9 lvl_Requirements 315 # 315m +60
-scoreboard players set Diving_10 lvl_Requirements 375 # 375m 
+scoreboard players set Diving_1 lvl_Requirements 15
+scoreboard players set Diving_2 lvl_Requirements 35
+scoreboard players set Diving_3 lvl_Requirements 60
+scoreboard players set Diving_4 lvl_Requirements 90
+scoreboard players set Diving_5 lvl_Requirements 125
+scoreboard players set Diving_6 lvl_Requirements 165
+scoreboard players set Diving_7 lvl_Requirements 210
+scoreboard players set Diving_8 lvl_Requirements 260
+scoreboard players set Diving_9 lvl_Requirements 315
+scoreboard players set Diving_10 lvl_Requirements 375
 
 #Swimming + Diving
 function lvl:setup/swimming_diving
@@ -97,6 +97,29 @@ scoreboard players set Mining_10 lvl_Requirements 150000
 
 #Combat
 function lvl:setup/combat
+
+#Number of Mob to kill -1
+scoreboard players set Enderdragon_1 lvl_Requirements 0
+scoreboard players set Wither_1 lvl_Requirements 0
+scoreboard players set Warden_1 lvl_Requirements 0
+scoreboard players set Blaze_1 lvl_Requirements 99
+# execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=1..}] only zensiert:zensiert/combat
+scoreboard players set Zombie_1 lvl_Requirements 149
+scoreboard players set Spider_1 lvl_Requirements 49
+scoreboard players set Skeleton_1 lvl_Requirements 99
+scoreboard players set Drowned_1 lvl_Requirements 79
+scoreboard players set Creeper_1 lvl_Requirements 59
+scoreboard players set Guardian_1 lvl_Requirements 29
+scoreboard players set Enderman_1 lvl_Requirements 74
+scoreboard players set Ghast_1 lvl_Requirements 24
+scoreboard players set Hoglin_1 lvl_Requirements 49
+scoreboard players set Piglin_1 lvl_Requirements 149
+scoreboard players set Brute_1 lvl_Requirements 9
+scoreboard players set Pillager_1 lvl_Requirements 99
+scoreboard players set Ravager_1 lvl_Requirements 14
+scoreboard players set Shulker_1 lvl_Requirements 49
+scoreboard players set Slime_1 lvl_Requirements 99
+scoreboard players set Witch_1 lvl_Requirements 14
 
 #Player (Player Level = All other Levels Combined)
 function lvl:setup/player

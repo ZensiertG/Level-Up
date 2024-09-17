@@ -1,27 +1,50 @@
 {
     "display": {
-        "title": {
-            "text": "Dragonkiller",
-            "color": "dark_purple"
-        },
-        "description": {
-            "text": "Kill the Enderdragon"
-        },
-        "icon": {
-            "id": "minecraft:dragon_head"
-        },
-        "frame": "challenge",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": true
+      "icon": {
+        "id": "minecraft:dragon_head",
+        "count": 1
+      },
+      "title": {
+        "text": "Dragonkiller",
+        "color": "dark_purple"
+      },
+      "description": "Kill the Enderdragon",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
     },
+    "parent": "zensiert:zensiert/combat/endermankiller",
     "criteria": {
-        "lvl": {
-            "trigger": "minecraft:impossible"
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_KillGhast": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Enderdragon_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ],
+          "entity": {
+            "type": "minecraft:ender_dragon"
+          }
         }
+      }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/combat/bosskill"
-    },
-    "parent": "zensiert:zensiert/combat"
-}
+      "function": "lvl:advancements/skills/combat/bosskill"
+    }
+  }
+  

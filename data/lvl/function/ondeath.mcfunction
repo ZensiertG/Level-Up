@@ -4,16 +4,26 @@
 # Instamine Stone - Netherte: 10
 # Instamine Deepslate - Diamond: 56
 # Instamine Deepslate - Netherite: 55
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=1..,lvl_Miningf..=1}] minecraft:player.mining_efficiency modifier add level-mining-1 5 add_value # 5
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=2..,lvl_Miningf..=2}] minecraft:player.mining_efficiency modifier add level-mining-2 5 add_value # 10 - Netherite instamine stone
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=3..,lvl_Miningf..=3}] minecraft:player.mining_efficiency modifier add level-mining-3 5 add_value # 15 - Diamond Instamine Stone
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=4..,lvl_Miningf..=4}] minecraft:player.mining_efficiency modifier add level-mining-4 10 add_value # 25
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=5..,lvl_Miningf..=5}] minecraft:player.mining_efficiency modifier add level-mining-5 11 add_value # 36 - unenchanted Netherite instamine stone
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=6..,lvl_Miningf..=6}] minecraft:player.mining_efficiency modifier add level-mining-6 9 add_value # 45 - unechanted Diamond instamine stone
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=7..,lvl_Miningf..=7}] minecraft:player.mining_efficiency modifier add level-mining-7 10 add_value # 55 - Netherite Instamine Deepslate
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=8..,lvl_Miningf..=8}] minecraft:player.mining_efficiency modifier add level-mining-8 10 add_value # 65 - Diamond Instamine Deepslate
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=9..,lvl_Miningf..=9}] minecraft:player.mining_efficiency modifier add level-mining-9 16 add_value # 81 - unenchanted Netherite instamine Deepslate
-execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=10..,lvl_Miningf..=10}] minecraft:player.mining_efficiency modifier add level-mining-10 19 add_value # 100 - unenchanted Diamond instamine Deepslate
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=1..,lvl_Miningf..=1}] minecraft:player.mining_efficiency modifier add level-mining-1 5 add_value 
+# 5
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=2..,lvl_Miningf..=2}] minecraft:player.mining_efficiency modifier add level-mining-2 5 add_value
+# 10 - Netherite instamine stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=3..,lvl_Miningf..=3}] minecraft:player.mining_efficiency modifier add level-mining-3 5 add_value
+# 15 - Diamond Instamine Stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=4..,lvl_Miningf..=4}] minecraft:player.mining_efficiency modifier add level-mining-4 10 add_value
+# 25
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=5..,lvl_Miningf..=5}] minecraft:player.mining_efficiency modifier add level-mining-5 11 add_value
+# 36 - unenchanted Netherite instamine stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=6..,lvl_Miningf..=6}] minecraft:player.mining_efficiency modifier add level-mining-6 9 add_value
+# 45 - unechanted Diamond instamine stone
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=7..,lvl_Miningf..=7}] minecraft:player.mining_efficiency modifier add level-mining-7 10 add_value
+# 55 - Netherite Instamine Deepslate
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=8..,lvl_Miningf..=8}] minecraft:player.mining_efficiency modifier add level-mining-8 10 add_value
+# 65 - Diamond Instamine Deepslate
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=9..,lvl_Miningf..=9}] minecraft:player.mining_efficiency modifier add level-mining-9 16 add_value
+# 81 - unenchanted Netherite instamine Deepslate
+execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_Mining=10..,lvl_Miningf..=10}] minecraft:player.mining_efficiency modifier add level-mining-10 19 add_value
+# 100 - unenchanted Diamond instamine Deepslate
 
 #Player
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=1..,lvl_Heartsf..=1}] minecraft:generic.max_health modifier add level-player-5 2 add_value
@@ -31,26 +41,45 @@ execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Resis
 execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Fire matches 1 run effect give @s[scores={lvl_Fire=1..,lvl_Firef..=1}] minecraft:fire_resistance infinite 0 true
 
 #Jump
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=1..,lvl_Jumpf..=1}] minecraft:generic.jump_strength modifier add level-jump-1 0.06 add_value # 1.5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=2..,lvl_Jumpf..=2}] minecraft:generic.jump_strength modifier add level-jump-2 0.08 add_value # 2 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=3..,lvl_Jumpf..=3}] minecraft:generic.fall_damage_multiplier modifier add level-jump-3 -0.15 add_value # 15% Falldamage reduction
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=4..,lvl_Jumpf..=4}] minecraft:generic.jump_strength modifier add level-jump-4 0.08 add_value # 2.5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=5..,lvl_Jumpf..=5}] minecraft:generic.jump_strength modifier add level-jump-5 0.05 add_value # 3 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=6..,lvl_Jumpf..=6}] minecraft:generic.fall_damage_multiplier modifier add level-jump-6 -0.25 add_value # 40% Falldamage reduction
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=7..,lvl_Jumpf..=7}] minecraft:generic.jump_strength modifier add level-jump-7 0.05 add_value # 3.5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=8..,lvl_Jumpf..=8}] minecraft:generic.jump_strength modifier add level-jump-8 0.06 add_value # 4 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=9..,lvl_Jumpf..=9}] minecraft:generic.fall_damage_multiplier modifier add level-jump-9 -0.3 add_value # 70% Falldamage reduction
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=10..,lvl_Jumpf..=10}] minecraft:generic.fall_damage_multiplier modifier add level-jump-10 -0.3 add_value # 100% Falldamage reduction
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=1..,lvl_Jumpf..=1}] minecraft:generic.jump_strength modifier add level-jump-1 0.06 add_value
+# 1.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=2..,lvl_Jumpf..=2}] minecraft:generic.jump_strength modifier add level-jump-2 0.08 add_value
+# 2 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=3..,lvl_Jumpf..=3}] minecraft:generic.fall_damage_multiplier modifier add level-jump-3 -0.15 add_value
+# 15% Falldamage reduction
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=4..,lvl_Jumpf..=4}] minecraft:generic.jump_strength modifier add level-jump-4 0.08 add_value
+# 2.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=5..,lvl_Jumpf..=5}] minecraft:generic.jump_strength modifier add level-jump-5 0.05 add_value
+# 3 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=6..,lvl_Jumpf..=6}] minecraft:generic.fall_damage_multiplier modifier add level-jump-6 -0.25 add_value
+# 40% Falldamage reduction
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=7..,lvl_Jumpf..=7}] minecraft:generic.jump_strength modifier add level-jump-7 0.05 add_value
+# 3.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=8..,lvl_Jumpf..=8}] minecraft:generic.jump_strength modifier add level-jump-8 0.06 add_value
+# 4 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=9..,lvl_Jumpf..=9}] minecraft:generic.fall_damage_multiplier modifier add level-jump-9 -0.3 add_value
+# 70% Falldamage reduction
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=10..,lvl_Jumpf..=10}] minecraft:generic.fall_damage_multiplier modifier add level-jump-10 -0.3 add_value
+# 100% Falldamage reduction
 
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=1..,lvl_Jumpf..=1}] minecraft:generic.safe_fall_distance modifier add level-jump-1 .5 add_value # 3.5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=2..,lvl_Jumpf..=2}] minecraft:generic.safe_fall_distance modifier add level-jump-2 .5 add_value # 4 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=3..,lvl_Jumpf..=3}] minecraft:generic.safe_fall_distance modifier add level-jump-3 .5 add_value # 4.5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=4..,lvl_Jumpf..=4}] minecraft:generic.safe_fall_distance modifier add level-jump-4 .5 add_value # 5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=5..,lvl_Jumpf..=5}] minecraft:generic.safe_fall_distance modifier add level-jump-5 .5 add_value # 5.5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=6..,lvl_Jumpf..=6}] minecraft:generic.safe_fall_distance modifier add level-jump-6 .5 add_value # 6 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=7..,lvl_Jumpf..=7}] minecraft:generic.safe_fall_distance modifier add level-jump-7 .5 add_value # 6.5 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=8..,lvl_Jumpf..=8}] minecraft:generic.safe_fall_distance modifier add level-jump-8 .5 add_value # 7 Blocks
-execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=9..,lvl_Jumpf..=9}] minecraft:generic.safe_fall_distance modifier add level-jump-9 .5 add_value # 7.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=1..,lvl_Jumpf..=1}] minecraft:generic.safe_fall_distance modifier add level-jump-1 .5 add_value
+# 3.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=2..,lvl_Jumpf..=2}] minecraft:generic.safe_fall_distance modifier add level-jump-2 .5 add_value
+# 4 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=3..,lvl_Jumpf..=3}] minecraft:generic.safe_fall_distance modifier add level-jump-3 .5 add_value
+# 4.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=4..,lvl_Jumpf..=4}] minecraft:generic.safe_fall_distance modifier add level-jump-4 .5 add_value
+# 5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=5..,lvl_Jumpf..=5}] minecraft:generic.safe_fall_distance modifier add level-jump-5 .5 add_value
+# 5.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=6..,lvl_Jumpf..=6}] minecraft:generic.safe_fall_distance modifier add level-jump-6 .5 add_value
+# 6 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=7..,lvl_Jumpf..=7}] minecraft:generic.safe_fall_distance modifier add level-jump-7 .5 add_value
+# 6.5 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=8..,lvl_Jumpf..=8}] minecraft:generic.safe_fall_distance modifier add level-jump-8 .5 add_value
+# 7 Blocks
+execute if score lvl_Setting lvl_Jump matches 1 run attribute @s[scores={lvl_Jump=9..,lvl_Jumpf..=9}] minecraft:generic.safe_fall_distance modifier add level-jump-9 .5 add_value
+# 7.5 Blocks
 
 #Walk
 execute if score lvl_Setting lvl_Walk matches 1 run attribute @s[scores={lvl_Walk=1..,lvl_Walkf..=1}] minecraft:generic.movement_speed modifier add level-speed-1 .025 add_value
@@ -77,7 +106,7 @@ execute if score lvl_Setting lvl_Swim matches 1 run attribute @s[scores={lvl_Swi
 execute if score lvl_Setting lvl_Swim matches 1 run effect give @s[scores={lvl_Swim=1..,lvl_Swimf..=1..}] minecraft:dolphins_grace infinite 0 true
 
 #Swim + Diving
-execute if score lvl_Setting lvl_conduit matches 1 run effect give @s[scores={lvl_Swim=2..,lvl_Diving=6..,lvl_conduit=1}] minecraft:conduit_power infinite 0 true
+execute if score lvl_Setting lvl_conduit matches 1 run effect give @s[scores={lvl_Swim=10..,lvl_Diving=10..,lvl_conduit=1}] minecraft:conduit_power infinite 0 true
 
 #Utility
 execute as @s run scoreboard players operation @s lvl_Heartsfs = @s lvl_Heartsf

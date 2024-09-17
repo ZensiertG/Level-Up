@@ -1,16 +1,56 @@
 {
-    "criteria": {
-        "a": {
-            "trigger": "minecraft:impossible"
+    "display": {
+      "icon": {
+        "id": "minecraft:player_head",
+        "count": 1,
+        "components": {
+          "minecraft:profile": {
+            "properties": [
+              {
+                "name": "textures",
+                "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWM3M2UxNmZhMjkyNjg5OWNmMTg0MzQzNjBlMjE0NGY4NGVmMWViOTgxZjk5NjE0ODkxMjE0OGRkODdlMGIyYSJ9fX0="
+              }
+            ]
+          }
         }
+      },
+      "title": "Ravagerkiller",
+      "description": "Kill Ravager",
+      "show_toast": false,
+      "announce_to_chat": true,
+      "hidden": false
     },
-    "requirements": [
-        [
-            "a"
-        ]
-    ],
+    "parent": "zensiert:zensiert/combat/pillagerkiller",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_KillRavager": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Ravager_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ],
+          "entity": {
+            "type": "minecraft:ravager"
+          }
+        }
+      }
+    },
     "rewards": {
-        "function": "lvl:advancements/skills/combat/combatupgrade"
-    },
-    "parent": "zensiert:zensiert/combat"
-}
+      "function": "lvl:advancements/skills/combat/combatupgrade"
+    }
+  }
+  

@@ -117,28 +117,7 @@ execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBloc
 execute as @a unless score @s lvl_Mining >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/mining
 
 #Combat
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_KillEnderdragon=1..}] only zensiert:zensiert/combat/dragonkill
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_KillWither=1..}] only zensiert:zensiert/combat/witherkill
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_KillWarden=1..}] only zensiert:zensiert/combat/wardenkill
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=1..}] only zensiert:zensiert/combat
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_KillBlaze=100..}] only zensiert:zensiert/combat/killblaze
-
-advancement grant @a[scores={lvl_KillZombie=150..}] only zensiert:zensiert/combat/zombiekiller
-advancement grant @a[scores={lvl_KillSpider=50..}] only zensiert:zensiert/combat/spiderkiller
-advancement grant @a[scores={lvl_KillSkeleton=100..}] only zensiert:zensiert/combat/skeletonkiller
-advancement grant @a[scores={lvl_KillDrowned=80..}] only zensiert:zensiert/combat/drownedkiller
-advancement grant @a[scores={lvl_KillCreeper=60..}] only zensiert:zensiert/combat/creeperkiller
-advancement grant @a[scores={lvl_KillGuardian=30..}] only zensiert:zensiert/combat/guardiankiller
-advancement grant @a[scores={lvl_KillEnderman=75..}] only zensiert:zensiert/combat/endermankiller
-advancement grant @a[scores={lvl_KillGhast=25..}] only zensiert:zensiert/combat/ghastkiller
-advancement grant @a[scores={lvl_KillHoglin=50..}] only zensiert:zensiert/combat/hoglinkiller
-advancement grant @a[scores={lvl_KillPiglin=150..}] only zensiert:zensiert/combat/piglinkiller
-advancement grant @a[scores={lvl_KillBrute=10..}] only zensiert:zensiert/combat/brutekiller
-advancement grant @a[scores={lvl_KillPillager=100..}] only zensiert:zensiert/combat/pillagerkiller
-advancement grant @a[scores={lvl_KillRavager=15..}] only zensiert:zensiert/combat/ravagerkiller
-advancement grant @a[scores={lvl_KillShulker=50..}] only zensiert:zensiert/combat/shulkerkiller
-advancement grant @a[scores={lvl_KillSlime=100..}] only zensiert:zensiert/combat/slimekiller
-advancement grant @a[scores={lvl_KillWitch=15..}] only zensiert:zensiert/combat/witchkiller
 
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=5..}] only zensiert:zensiert/combat/regen
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=10..}] only zensiert:zensiert/utility/regen1
@@ -146,7 +125,7 @@ execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[score
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=20..}] only zensiert:zensiert/utility/regen3
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=25..}] only zensiert:zensiert/utility/regen4
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=30..}] only zensiert:zensiert/combat/regen5
-execute as @a unless score @s lvl_Combat >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/combat
+# execute as @a unless score @s lvl_Combat >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/combat
 
 #Player
 execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=5..}] only zensiert:zensiert/player/hearts

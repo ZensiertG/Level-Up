@@ -1,16 +1,46 @@
 {
+    "display": {
+      "icon": {
+        "id": "minecraft:creeper_head",
+        "count": 1
+      },
+      "title": "Creeperkiller",
+      "description": "Kill Creepers",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "zensiert:zensiert/combat/skeletonkiller",
     "criteria": {
-        "a": {
-            "trigger": "minecraft:impossible"
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_KillCreeper": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Creeper_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ],
+          "entity": {
+            "type": "minecraft:creeper"
+          }
         }
+      }
     },
-    "requirements": [
-        [
-            "a"
-        ]
-    ],
     "rewards": {
-        "function": "lvl:advancements/skills/combat/combatupgrade"
-    },
-    "parent": "zensiert:zensiert/combat"
-}
+      "function": "lvl:advancements/skills/combat/combatupgrade"
+    }
+  }
+  
