@@ -13,7 +13,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Swimming_2"
+                      "name": "Swimming_9"
                     },
                     "score": "lvl_Requirements"
                   }

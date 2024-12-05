@@ -1,4 +1,21 @@
 {
+    "display": {
+      "icon": {
+        "id": "minecraft:jungle_boat"
+      },
+      "title": {
+        "text": "Swimming V",
+        "color": "gold"
+      },
+      "description": {
+        "text": "Increased Underwater Movement Speed"
+      },
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "zensiert:zensiert/swimming",
     "criteria": {
       "tick": {
         "trigger": "minecraft:tick",
@@ -13,7 +30,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Swimming_2"
+                      "name": "Swimming_5"
                     },
                     "score": "lvl_Requirements"
                   }
@@ -25,7 +42,7 @@
       }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/swim/upgrade"
-    },
-    "parent": "zensiert:zensiert/swimming"
-}
+      "function": "lvl:advancements/skills/swim/upgrade"
+    }
+  }
+  

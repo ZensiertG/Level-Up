@@ -41,16 +41,6 @@ execute as @a unless score @s lvl_Sprint >= 1 lvl_math run advancement revoke @s
 execute as @a unless score @s lvl_Jump >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/jump
 
 #Swim
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_1 lvl_Requirements run advancement grant @s only zensiert:zensiert/swimming
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_2 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/swim_2
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_3 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/swim_3
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_4 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/swim_4
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_5 lvl_Requirements run advancement grant @s only zensiert:zensiert/swim_5
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_6 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/swim_6
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_7 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/swim_7
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_8 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/swim_8
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_9 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/swim_9
-execute as @a if score lvl_Setting lvl_Swim matches 1 if score @s lvl_Swim_block >= Swimming_10 lvl_Requirements run advancement grant @s only zensiert:zensiert/swim_10
 execute as @a unless score @s lvl_Swim >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/swimming
 
 #Diving
