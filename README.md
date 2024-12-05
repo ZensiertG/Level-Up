@@ -37,9 +37,11 @@ Not all Skills give you a permanent effect. Sprinting for Example gives some Sat
 
 
 #### Alternative Downloads:
+- Modrinth https://modrinth.com/datapack/level-up
 - Planet Minecraft https://www.planetminecraft.com/data-pack/level-up-5542359/  
 - CurseForge https://www.curseforge.com/minecraft/texture-packs/level-up/files  
+- Github https://github.com/ZensiertG/Level-Up
 
 #### Upcoming Skills
 - Maybe Fishing ㄟ( ▔, ▔ )ㄏ  
-- Feel free to comment suggestions on Planet Minecraft <3  
+- Feel free to comment suggestions on Planet Minecraft or Github <3  
