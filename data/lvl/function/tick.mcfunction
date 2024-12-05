@@ -4,6 +4,7 @@ execute as @a run function lvl:math
 execute as @a unless score @s lvl_reset matches 1 run advancement revoke @s from zensiert:zensiert/level_up
 execute as @a unless score @s lvl_reset matches 1 run scoreboard players set @s lvl_reset 1
 execute as @a if score @s lvl_onDeath matches 1 run function lvl:ondeath
+execute as @a if score @s lvl_onMilk matches 1 run function lvl:onmilk
 
 #Dashboard
 execute as @a unless score @s Dashboard matches 0 at @s run function lvl:dashboard

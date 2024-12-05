@@ -17,6 +17,7 @@ scoreboard objectives add lvl_reset dummy
 scoreboard objectives add lvl_Requirements dummy
 scoreboard objectives add lvl_Version dummy
 scoreboard objectives add lvl_onDeath minecraft.custom:minecraft.time_since_death
+scoreboard objectives add lvl_onMilk minecraft.used:minecraft.milk_bucket
 
 #Animations
 scoreboard objectives add Spiral dummy
