@@ -8,20 +8,20 @@ Use /trigger Settings to view the Admin Panel and Disable/Enable Skills or Reset
 
 #### Skills
 - Player (Player Level is equal to all other Levels combined)  
-    - Gain 2 extra Hearts per 5 Levels up to a full 2nd row
-- Walking (based on Distance walked) (3 Levels)  
-    - Level 1 requires 12,000 Blocks walked  
-- Sprinting (based on Distance Sprinted) (3 Levels)  
-    -  Level 1 requires 15,000 Blocks Sprinted  
-- Jumping (number of times jumped) (3 Levels)  
+    - Gain extra Hearts every 5 Levels up to a full 2nd row
+- Walking (based on Distance walked) (10 Levels)  
+    - Level 1 requires 10,000 Blocks walked  
+- Sprinting (based on Distance Sprinted) (10 Levels)  
+    -  Level 1 requires 10,000 Blocks Sprinted  
+- Jumping (number of times jumped) (10 Levels)  
     - Level 1 requires 2,000 Jumps  
-- Swimming (Distance swimming) (2 Levels)  
-    - Level 1 requires 100,000 Blocks spent Swimming (which is a lot but after reaching you get dolphins grace)  
-- Diving (Time spent under Water) (6 Levels)  
+- Swimming (Distance swimming) (10 Levels)  
+    - Level 1 requires 10,000 Blocks spent Swimming
+- Diving (Time spent under Water) (10 Levels)  
     - Level 1 requires 15 minutes spent underwater  
-- Mining (Blocks Mined [​Ores and Stonelike blocks]) (3 Levels)  
+- Mining (Blocks Mined [​Ores and Stonelike blocks]) (10 Levels)  
     -  Level 1 requires 2,000 Blocks mined  
-- Combat (Milestones like killing Bosses or killing x amount of x Mob)  (22 Levels)  
+- Combat (Milestones like killing Bosses or killing x amount of x Mob)  (20 Levels)  
     - A level is gained by Killing The Wither/Enderdragon/Warden  
     - Killing 100 Blazes grants a Level  
     - Kill X Amount of other Mobs  
