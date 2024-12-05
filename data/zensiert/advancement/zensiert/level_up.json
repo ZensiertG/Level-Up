@@ -24,6 +24,9 @@
             "trigger": "minecraft:tick"
         }
     },
-    "parent": "zensiert:zensiert/root"
+    "parent": "zensiert:zensiert/root",
+    "rewards": {
+      "function": "lvl:setup/initializeplayer"
+    }
 
 }
