@@ -1,8 +1,8 @@
 
 scoreboard objectives remove lvl_Combat
-scoreboard objectives remove lvl_Resist
-scoreboard objectives remove lvl_Resistf 
-scoreboard objectives remove lvl_Resistfs 
+scoreboard objectives remove lvl_Armor
+scoreboard objectives remove lvl_Armorf 
+scoreboard objectives remove lvl_Armorfs 
 scoreboard objectives remove lvl_Fire
 scoreboard objectives remove lvl_Firef 
 scoreboard objectives remove lvl_Firefs 

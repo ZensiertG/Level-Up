@@ -1,8 +1,8 @@
 
 scoreboard objectives add lvl_Combat dummy
-scoreboard objectives add lvl_Resist dummy
-scoreboard objectives add lvl_Resistf trigger
-scoreboard objectives add lvl_Resistfs trigger
+scoreboard objectives add lvl_Armor dummy
+scoreboard objectives add lvl_Armorf trigger
+scoreboard objectives add lvl_Armorfs trigger
 scoreboard objectives add lvl_Fire dummy
 scoreboard objectives add lvl_Firef trigger
 scoreboard objectives add lvl_Firefs trigger
@@ -32,4 +32,4 @@ scoreboard objectives add lvl_KillWitch minecraft.killed:minecraft.witch
 scoreboard players set lvl_Setting lvl_Combat 1
 scoreboard players set lvl_Setting lvl_Regen 1
 scoreboard players set lvl_Setting lvl_Fire 1
-scoreboard players set lvl_Setting lvl_Resist 1
+scoreboard players set lvl_Setting lvl_Armor 1

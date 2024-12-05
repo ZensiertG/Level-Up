@@ -11,18 +11,12 @@ scoreboard players enable @a Dashboard
 execute as @a unless score @s Settings matches 0 at @s run function lvl:settings
 scoreboard players enable @a Settings
 
-execute as @a unless score @s lvl_Heartsf = @s lvl_Heartsfs run effect clear @s minecraft:health_boost
-execute as @a unless score @s lvl_Miningf = @s lvl_Miningfs run effect clear @s minecraft:haste
-execute as @a unless score @s lvl_Resistf = @s lvl_Resistfs run effect clear @s minecraft:resistance
-execute as @a unless score @s lvl_Jumpf = @s lvl_Jumpfs run effect clear @s minecraft:jump_boost
-execute as @a unless score @s lvl_Walkf = @s lvl_Walkfs run effect clear @s minecraft:speed
 execute as @a unless score @s lvl_Firef = @s lvl_Firefs run effect clear @s minecraft:fire_resistance
 execute as @a unless score @s lvl_conduit = @s lvl_conduits run effect clear @s minecraft:conduit_power
-execute as @a unless score @s lvl_Swimf = @s lvl_Swimfs run effect clear @s minecraft:dolphins_grace
 
 execute as @a unless score @s lvl_Heartsf = @s lvl_Heartsfs run function lvl:ondeath
 execute as @a unless score @s lvl_Miningf = @s lvl_Miningfs run function lvl:ondeath
-execute as @a unless score @s lvl_Resistf = @s lvl_Resistfs run function lvl:ondeath
+execute as @a unless score @s lvl_Armorf = @s lvl_Armorfs run function lvl:ondeath
 execute as @a unless score @s lvl_Jumpf = @s lvl_Jumpfs run function lvl:ondeath
 execute as @a unless score @s lvl_Walkf = @s lvl_Walkfs run function lvl:ondeath
 execute as @a unless score @s lvl_Firef = @s lvl_Firefs run function lvl:ondeath

@@ -34,9 +34,9 @@ execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores=
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=6..,lvl_Heartsf=6..}] minecraft:max_health modifier add level-player-30 4 add_value
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=7..,lvl_Heartsf=7..}] minecraft:max_health modifier add level-player-35 2 add_value
 #Combat
-execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Resist matches 1 run effect give @s[scores={lvl_Resist=1..,lvl_Resistf=1..}] minecraft:resistance infinite 0 true
-execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Resist matches 1 run effect give @s[scores={lvl_Resist=2..,lvl_Resistf=2..}] minecraft:resistance infinite 1 true
-execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Resist matches 1 run effect give @s[scores={lvl_Resist=3..,lvl_Resistf=3..}] minecraft:resistance infinite 2 true
+execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Armor matches 1 run attribute @s[scores={lvl_Armor=1..,lvl_Armorf=1..}] minecraft:armor modifier add level-armor-1 3 add_value
+execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Armor matches 1 run attribute @s[scores={lvl_Armor=2..,lvl_Armorf=2..}] minecraft:armor modifier add level-armor-2 3 add_value
+execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Armor matches 1 run attribute @s[scores={lvl_Armor=3..,lvl_Armorf=3..}] minecraft:armor modifier add level-armor-3 4 add_value
 
 execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Fire matches 1 run effect give @s[scores={lvl_Fire=1..,lvl_Firef=1..}] minecraft:fire_resistance infinite 0 true
 
@@ -111,7 +111,7 @@ execute if score lvl_Setting lvl_conduit matches 1 run effect give @s[scores={lv
 #Utility
 execute as @s run scoreboard players operation @s lvl_Heartsfs = @s lvl_Heartsf
 execute as @s run scoreboard players operation @s lvl_Miningfs = @s lvl_Miningf
-execute as @s run scoreboard players operation @s lvl_Resistfs = @s lvl_Resistf
+execute as @s run scoreboard players operation @s lvl_Armorfs = @s lvl_Armorf
 execute as @s run scoreboard players operation @s lvl_Jumpfs = @s lvl_Jumpf
 execute as @s run scoreboard players operation @s lvl_Walkfs = @s lvl_Walkf
 execute as @s run scoreboard players operation @s lvl_Firefs = @s lvl_Firef
