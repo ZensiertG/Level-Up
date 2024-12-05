@@ -45,17 +45,7 @@ execute as @a unless score @s lvl_Swim >= 1 lvl_math run advancement revoke @s f
 
 #Diving
 execute as @a store result score @s lvl_air run data get entity @s Air
-execute as @a if score @s air matches 1..299 run scoreboard players add @s lvl_Diving_t 1
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_1 lvl_Requirements run advancement grant @s only zensiert:zensiert/diving
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_2 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/diving_2
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_3 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/diving_3
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_4 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/diving_4
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_5 lvl_Requirements run advancement grant @s only zensiert:zensiert/diving_5
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_6 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/diving_6
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_7 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/diving_7
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_8 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/diving_8
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_9 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/diving_9
-execute as @a if score lvl_Setting lvl_Diving matches 1 if score @s lvl_Diving_m >= Diving_10 lvl_Requirements run advancement grant @s only zensiert:zensiert/diving_10
+execute as @a if score @s lvl_air matches 1..299 run scoreboard players add @s lvl_Diving_t 1
 execute as @a unless score @s lvl_Diving >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/diving
 
 #Mining

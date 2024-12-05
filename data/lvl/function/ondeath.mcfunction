@@ -108,6 +108,19 @@ execute if score lvl_Setting lvl_Swim matches 1 run effect give @s[scores={lvl_S
 #Swim + Diving
 execute if score lvl_Setting lvl_conduit matches 1 run effect give @s[scores={lvl_Swim=10..,lvl_Diving=10..,lvl_conduit=1..}] minecraft:conduit_power infinite 0 true
 
+#Diving
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=1..,lvl_Divingf=1..}] minecraft:oxygen_bonus modifier add level-diving-1 0.4 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=2..,lvl_Divingf=2..}] minecraft:oxygen_bonus modifier add level-diving-2 0.6 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=3..,lvl_Divingf=3..}] minecraft:oxygen_bonus modifier add level-diving-3 1 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=4..,lvl_Divingf=4..}] minecraft:oxygen_bonus modifier add level-diving-4 1 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=5..,lvl_Divingf=5..}] minecraft:oxygen_bonus modifier add level-diving-5 1 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=6..,lvl_Divingf=6..}] minecraft:oxygen_bonus modifier add level-diving-6 1 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=7..,lvl_Divingf=7..}] minecraft:oxygen_bonus modifier add level-diving-7 1 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=8..,lvl_Divingf=8..}] minecraft:oxygen_bonus modifier add level-diving-8 1 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=9..,lvl_Divingf=9..}] minecraft:oxygen_bonus modifier add level-diving-9 1 add_value
+execute if score lvl_Setting lvl_Diving matches 1 run attribute @s[scores={lvl_Diving=10..,lvl_Divingf=10..}] minecraft:oxygen_bonus modifier add level-diving-10 1 add_value
+
+
 #Utility
 execute as @s run scoreboard players operation @s lvl_Heartsfs = @s lvl_Heartsf
 execute as @s run scoreboard players operation @s lvl_Miningfs = @s lvl_Miningf

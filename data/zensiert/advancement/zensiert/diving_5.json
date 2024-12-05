@@ -1,4 +1,19 @@
 {
+    "display": {
+        "title": {
+            "text": "Diving V"
+        },
+        "description": {
+            "text": "Unlocked Diving Skill - Increase Lung Capacity"
+        },
+        "icon": {
+            "id": "minecraft:fire_coral"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
     "parent": "zensiert:zensiert/diving",
     "criteria": {
       "tick": {
@@ -14,7 +29,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Diving_3"
+                      "name": "Diving_5"
                     },
                     "score": "lvl_Requirements"
                   }

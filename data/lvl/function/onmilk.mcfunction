@@ -72,6 +72,18 @@ attribute @s minecraft:submerged_mining_speed modifier remove level-swim-7
 attribute @s minecraft:submerged_mining_speed modifier remove level-swim-8
 attribute @s minecraft:submerged_mining_speed modifier remove level-swim-9
 
+#Diving
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-1
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-2
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-3
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-4
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-5
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-6
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-7
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-8
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-9
+attribute @s minecraft:oxygen_bonus modifier remove level-diving-10
+
 
 #ResetMilk
 scoreboard players set @s lvl_onMilk 0

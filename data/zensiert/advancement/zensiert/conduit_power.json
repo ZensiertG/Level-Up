@@ -24,5 +24,5 @@
     "rewards": {
         "function": "lvl:advancements/conduit_power"
     },
-    "parent": "zensiert:zensiert/diving"
+    "parent": "zensiert:zensiert/diving_10"
 }

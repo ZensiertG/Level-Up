@@ -1,5 +1,20 @@
 {
-    "parent": "zensiert:zensiert/diving",
+    "display": {
+        "title": {
+            "text": "Diving X"
+        },
+        "description": {
+            "text": "Unlocked Diving Skill - Increase Lung Capacity"
+        },
+        "icon": {
+            "id": "minecraft:horn_coral"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "zensiert:zensiert/diving_5",
     "criteria": {
       "tick": {
         "trigger": "minecraft:tick",
@@ -14,7 +29,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Diving_3"
+                      "name": "Diving_10"
                     },
                     "score": "lvl_Requirements"
                   }

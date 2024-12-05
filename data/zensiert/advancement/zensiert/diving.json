@@ -4,7 +4,7 @@
             "text": "Diving"
         },
         "description": {
-            "text": "Unlocked Diving Skill"
+            "text": "Unlocked Diving Skill - Increase Lung Capacity"
         },
         "icon": {
             "id": "minecraft:bubble_coral"
@@ -14,13 +14,33 @@
         "announce_to_chat": true,
         "hidden": true
     },
+    "parent": "zensiert:zensiert/level_up",
     "criteria": {
-        "tick": {
-            "trigger": "minecraft:impossible"
+      "tick": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_Diving_m": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Diving_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ]
         }
+      }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/diving/1"
-    },
-    "parent": "zensiert:zensiert/level_up"
+      "function": "lvl:advancements/skills/diving/1"
+    }
 }
