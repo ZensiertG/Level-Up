@@ -52,13 +52,7 @@ execute as @a unless score @s lvl_Diving >= 1 lvl_math run advancement revoke @s
 execute as @a unless score @s lvl_Mining >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/mining
 
 #Combat
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=5..}] only zensiert:zensiert/combat/regen
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=10..}] only zensiert:zensiert/utility/regen1
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=15..}] only zensiert:zensiert/utility/regen2
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=20..}] only zensiert:zensiert/utility/regen3
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=25..}] only zensiert:zensiert/utility/regen4
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=30..}] only zensiert:zensiert/combat/regen5
-# execute as @a unless score @s lvl_Combat >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/combat
+execute as @a unless score @s lvl_Combat >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/combat
 
 #Player
 execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=5..}] only zensiert:zensiert/player/hearts

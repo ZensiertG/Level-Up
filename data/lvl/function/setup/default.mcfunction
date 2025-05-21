@@ -99,12 +99,19 @@ scoreboard players set Mining_10 lvl_Requirements 150000
 function lvl:setup/combat
 
 scoreboard players set Combat_1 lvl_Requirements 1
+
+#Combat Level needed for Regen Level (2 Hearts/min/level)
+scoreboard players set Regen_1 lvl_Requirements 5
+scoreboard players set Regen_2 lvl_Requirements 10
+scoreboard players set Regen_3 lvl_Requirements 15
+scoreboard players set Regen_4 lvl_Requirements 20
+scoreboard players set Regen_5 lvl_Requirements 25
+scoreboard players set Regen_6 lvl_Requirements 30
 #Number of Mob to kill -1
 scoreboard players set Enderdragon_1 lvl_Requirements 0
 scoreboard players set Wither_1 lvl_Requirements 0
 scoreboard players set Warden_1 lvl_Requirements 0
 scoreboard players set Blaze_1 lvl_Requirements 99
-# execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=1..}] only zensiert:zensiert/combat
 scoreboard players set Zombie_1 lvl_Requirements 149
 scoreboard players set Spider_1 lvl_Requirements 49
 scoreboard players set Skeleton_1 lvl_Requirements 99

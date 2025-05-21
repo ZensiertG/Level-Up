@@ -4,7 +4,7 @@
             "text": "Regeneration"
         },
         "description": {
-            "text": "Unlocked Combat Level 5"
+            "text": "Unlocked Combat Level 5 - Heal an extra 2 Hearts a Minute"
         },
         "icon": {
             "id": "minecraft:potion"
@@ -15,15 +15,30 @@
         "hidden": true
     },
     "criteria": {
-        "a": {
-            "trigger": "minecraft:impossible"
+      "tick": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_Combat": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Regen_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ]
         }
+      }
     },
-    "requirements": [
-        [
-            "a"
-        ]
-    ],
     "rewards": {
         "function": "lvl:advancements/skills/combat/regen"
     },

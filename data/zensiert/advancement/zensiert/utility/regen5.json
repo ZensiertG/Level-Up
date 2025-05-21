@@ -13,7 +13,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Regen_4"
+                      "name": "Regen_5"
                     },
                     "score": "lvl_Requirements"
                   }
@@ -25,7 +25,7 @@
       }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/combat/regenupgrade"
+        "function": "lvl:advancements/regenupgrade"
     },
     "parent": "zensiert:zensiert/combat/regen"
 }
