@@ -98,6 +98,7 @@ scoreboard players set Mining_10 lvl_Requirements 150000
 #Combat
 function lvl:setup/combat
 
+scoreboard players set Combat_1 lvl_Requirements 1
 #Number of Mob to kill -1
 scoreboard players set Enderdragon_1 lvl_Requirements 0
 scoreboard players set Wither_1 lvl_Requirements 0

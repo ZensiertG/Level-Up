@@ -52,8 +52,6 @@ execute as @a unless score @s lvl_Diving >= 1 lvl_math run advancement revoke @s
 execute as @a unless score @s lvl_Mining >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/mining
 
 #Combat
-execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=1..}] only zensiert:zensiert/combat
-
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=5..}] only zensiert:zensiert/combat/regen
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=10..}] only zensiert:zensiert/utility/regen1
 execute if score lvl_Setting lvl_Combat matches 1 run advancement grant @a[scores={lvl_Combat=15..}] only zensiert:zensiert/utility/regen2

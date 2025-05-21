@@ -15,9 +15,29 @@
         "hidden": true
     },
     "criteria": {
-        "tick": {
-            "trigger": "minecraft:impossible"
+      "tick": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_Combat": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Combat_1"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ]
         }
+      }
     },
     "parent": "zensiert:zensiert/level_up"
 }
