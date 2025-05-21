@@ -49,16 +49,6 @@ execute as @a if score @s lvl_air matches 1..299 run scoreboard players add @s l
 execute as @a unless score @s lvl_Diving >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/diving
 
 #Mining
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_1 lvl_Requirements run advancement grant @s only zensiert:zensiert/mining
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_2 lvl_Requirements run advancement grant @s only zensiert:zensiert/mining_2
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_3 lvl_Requirements run advancement grant @s only zensiert:zensiert/mining_3
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_4 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/mining_4
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_5 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/mining_5
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_6 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/mining_6
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_7 lvl_Requirements run advancement grant @s only zensiert:zensiert/mining_7
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_8 lvl_Requirements run advancement grant @s only zensiert:zensiert/mining_8
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_9 lvl_Requirements run advancement grant @s only zensiert:zensiert/utility/mining_9
-execute as @a if score lvl_Setting lvl_Mining matches 1 if score @s lvl_MineBlocks >= Mining_10 lvl_Requirements run advancement grant @s only zensiert:zensiert/mining_10
 execute as @a unless score @s lvl_Mining >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/mining
 
 #Combat
