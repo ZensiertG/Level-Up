@@ -1,15 +1,15 @@
 {
     "display": {
         "title": {
-            "text": "Extra Hearts"
+            "text": "More Health"
         },
         "description": {
-            "text": "Unlocked Player Level 5 - your first extra Heart"
+            "text": "Unlocked at Player Level 25, You now got 1.5 rows!"
         },
         "icon": {
             "id": "minecraft:potion"
         },
-        "frame": "task",
+        "frame": "challenge",
         "show_toast": false,
         "announce_to_chat": true,
         "hidden": true
@@ -28,7 +28,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Hearts_1"
+                      "name": "Hearts_5"
                     },
                     "score": "lvl_Requirements"
                   }
@@ -40,7 +40,7 @@
       }
     },
     "rewards": {
-        "function": "lvl:advancements/skills/player/hearts"
+        "function": "lvl:advancements/skills/player/heartsupgrade"
     },
-    "parent": "zensiert:zensiert/level_up"
+    "parent": "zensiert:zensiert/player/hearts"
 }

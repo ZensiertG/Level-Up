@@ -55,13 +55,6 @@ execute as @a unless score @s lvl_Mining >= 1 lvl_math run advancement revoke @s
 execute as @a unless score @s lvl_Combat >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/combat
 
 #Player
-execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=5..}] only zensiert:zensiert/player/hearts
-execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=10..}] only zensiert:zensiert/utility/hearts_2
-execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=15..}] only zensiert:zensiert/utility/hearts_3
-execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=20..}] only zensiert:zensiert/utility/hearts_4
-execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=25..}] only zensiert:zensiert/utility/hearts_5
-execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=30..}] only zensiert:zensiert/utility/hearts_6
-execute if score lvl_Setting lvl_Hearts matches 1 run advancement grant @a[scores={lvl_Player=35..}] only zensiert:zensiert/player/hearts_full
 execute as @a unless score @s lvl_Player >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/player/hearts
 
 

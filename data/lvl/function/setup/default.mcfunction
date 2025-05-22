@@ -138,4 +138,9 @@ scoreboard players set Hearts_2 lvl_Requirements 10
 scoreboard players set Hearts_3 lvl_Requirements 15
 scoreboard players set Hearts_4 lvl_Requirements 20
 scoreboard players set Hearts_5 lvl_Requirements 25
+scoreboard players set Hearts_6 lvl_Requirements 30
+scoreboard players set Hearts_7 lvl_Requirements 35
+scoreboard players set Hearts_8 lvl_Requirements 40
+scoreboard players set Hearts_9 lvl_Requirements 45
+scoreboard players set Hearts_10 lvl_Requirements 50
 

@@ -27,12 +27,15 @@ execute if score lvl_Setting lvl_Mining matches 1 run attribute @s[scores={lvl_M
 
 #Player
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=1..,lvl_Heartsf=1..}] minecraft:max_health modifier add level-player-5 2 add_value
-execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=2..,lvl_Heartsf=2..}] minecraft:max_health modifier add level-player-10 4 add_value
+execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=2..,lvl_Heartsf=2..}] minecraft:max_health modifier add level-player-10 2 add_value
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=3..,lvl_Heartsf=3..}] minecraft:max_health modifier add level-player-15 2 add_value
-execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=4..,lvl_Heartsf=4..}] minecraft:max_health modifier add level-player-20 4 add_value
+execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=4..,lvl_Heartsf=4..}] minecraft:max_health modifier add level-player-20 2 add_value
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=5..,lvl_Heartsf=5..}] minecraft:max_health modifier add level-player-25 2 add_value
-execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=6..,lvl_Heartsf=6..}] minecraft:max_health modifier add level-player-30 4 add_value
+execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=6..,lvl_Heartsf=6..}] minecraft:max_health modifier add level-player-30 2 add_value
 execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=7..,lvl_Heartsf=7..}] minecraft:max_health modifier add level-player-35 2 add_value
+execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=8..,lvl_Heartsf=8..}] minecraft:max_health modifier add level-player-40 2 add_value
+execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=9..,lvl_Heartsf=9..}] minecraft:max_health modifier add level-player-45 2 add_value
+execute as @s if score lvl_Setting lvl_Hearts matches 1 run attribute @s[scores={lvl_Hearts=10..,lvl_Heartsf=10..}] minecraft:max_health modifier add level-player-50 2 add_value
 #Combat
 execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Armor matches 1 run attribute @s[scores={lvl_Armor=1..,lvl_Armorf=1..}] minecraft:armor modifier add level-armor-1 3 add_value
 execute if score lvl_Setting lvl_Combat matches 1 if score lvl_Setting lvl_Armor matches 1 run attribute @s[scores={lvl_Armor=2..,lvl_Armorf=2..}] minecraft:armor modifier add level-armor-2 3 add_value
