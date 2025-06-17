@@ -8,10 +8,10 @@ scoreboard players enable @s lvl_Swimf
 scoreboard players enable @s lvl_Divingf
 scoreboard players enable @s lvl_Miningf
 scoreboard players enable @s lvl_conduit
-scoreboard players enable @s lvl_Resistf
 scoreboard players enable @s lvl_Firef
 scoreboard players enable @s lvl_Regenf
 scoreboard players enable @s lvl_Heartsf
+scoreboard players enable @s lvl_Armorf
 
 tellraw @s {"text":"Dashboard ↻","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Dashboard"}}
 
