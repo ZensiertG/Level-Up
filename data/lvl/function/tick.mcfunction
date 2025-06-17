@@ -15,21 +15,17 @@ scoreboard players enable @a Settings
 execute as @a unless score @s lvl_Firef = @s lvl_Firefs run effect clear @s minecraft:fire_resistance
 execute as @a unless score @s lvl_conduit = @s lvl_conduits run effect clear @s minecraft:conduit_power
 
-execute as @a unless score @s lvl_Heartsf = @s lvl_Heartsfs run function lvl:ondeath
-execute as @a unless score @s lvl_Miningf = @s lvl_Miningfs run function lvl:ondeath
-execute as @a unless score @s lvl_Armorf = @s lvl_Armorfs run function lvl:ondeath
-execute as @a unless score @s lvl_Jumpf = @s lvl_Jumpfs run function lvl:ondeath
-execute as @a unless score @s lvl_Walkf = @s lvl_Walkfs run function lvl:ondeath
-execute as @a unless score @s lvl_Firef = @s lvl_Firefs run function lvl:ondeath
-execute as @a unless score @s lvl_conduit = @s lvl_conduits run function lvl:ondeath
-execute as @a unless score @s lvl_Swimf = @s lvl_Swimfs run function lvl:ondeath
-
-execute as @a unless score @s lvl_Regenf = @s lvl_Regenfs run scoreboard players set @s Dashboard 1
-execute as @a run scoreboard players operation @s lvl_Regenfs = @s lvl_Regenf
-execute as @a unless score @s lvl_Divingf = @s lvl_Divingfs run scoreboard players set @s Dashboard 1
-execute as @a run scoreboard players operation @s lvl_Divingfs = @s lvl_Divingf
-execute as @a unless score @s lvl_Sprintf = @s lvl_Sprintfs run scoreboard players set @s Dashboard 1
-execute as @a run scoreboard players operation @s lvl_Sprintfs = @s lvl_Sprintf
+execute as @a unless score @s lvl_Heartsf = @s lvl_Heartsfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Miningf = @s lvl_Miningfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Armorf = @s lvl_Armorfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Jumpf = @s lvl_Jumpfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Walkf = @s lvl_Walkfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Firef = @s lvl_Firefs run function lvl:reset-attributes
+execute as @a unless score @s lvl_conduit = @s lvl_conduits run function lvl:reset-attributes
+execute as @a unless score @s lvl_Swimf = @s lvl_Swimfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Regenf = @s lvl_Regenfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Divingf = @s lvl_Divingfs run function lvl:reset-attributes
+execute as @a unless score @s lvl_Sprintf = @s lvl_Sprintfs run function lvl:reset-attributes
 
 #Walk
 execute as @a unless score @s lvl_Walk >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/walking
