@@ -13,7 +13,7 @@ scoreboard players enable @s lvl_Regenf
 scoreboard players enable @s lvl_Heartsf
 scoreboard players enable @s lvl_Armorf
 
-tellraw @s {"text":"Dashboard ↻","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Dashboard"}}
+tellraw @s {"text":"Dashboard ↻","bold":true,"color":"green","click_event":{"action":"run_command",command:"/trigger Dashboard"}}
 
 #Player
 function lvl:dashboard/player
@@ -41,5 +41,5 @@ function lvl:dashboard/combat
 
 
 #Secret
-tellraw @s[scores={lvl_Swim=2..,lvl_Diving=6..,lvl_conduit=0}] [{"text":"- Conduit Power","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Unlocked by reaching Swim lvl 2 and Diving lvl 6","color":"green"}]}},{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger lvl_conduit add 1"}}]
-tellraw @s[scores={lvl_Swim=2..,lvl_Diving=6..,lvl_conduit=1..}] [{"text":"- Conduit Power","color":"dark_purple","hoverEvent":{"action":"show_text","contents":[{"text":"Unlocked by reaching Swim lvl 2 and Diving lvl 6","color":"green"}]}},{"text":" Active","color":"aqua"},{"text":" [-]","color":"red","clickEvent":{"action":"run_command","value":"/trigger lvl_conduit add -1"}}]
+tellraw @s[scores={lvl_Swim=2..,lvl_Diving=6..,lvl_conduit=0}] [{"text":"- Conduit Power","color":"dark_purple",hover_event:{action:"show_text",value:[{"text":"Unlocked by reaching Swim lvl 2 and Diving lvl 6","color":"green"}]}},{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","click_event":{"action":"run_command",command:"/trigger lvl_conduit add 1"}}]
+tellraw @s[scores={lvl_Swim=2..,lvl_Diving=6..,lvl_conduit=1..}] [{"text":"- Conduit Power","color":"dark_purple",hover_event:{action:"show_text",value:[{"text":"Unlocked by reaching Swim lvl 2 and Diving lvl 6","color":"green"}]}},{"text":" Active","color":"aqua"},{"text":" [-]","color":"red","click_event":{"action":"run_command",command:"/trigger lvl_conduit add -1"}}]

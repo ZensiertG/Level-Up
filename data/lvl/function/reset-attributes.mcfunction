@@ -87,4 +87,4 @@ attribute @s minecraft:oxygen_bonus modifier remove level-diving-8
 attribute @s minecraft:oxygen_bonus modifier remove level-diving-9
 attribute @s minecraft:oxygen_bonus modifier remove level-diving-10
 
-execute as @s[scores={lvl_onMilk=0}] run function lvl:ondeath
+execute as @s unless score @s lvl_onMilk matches 1 run function lvl:ondeath

@@ -9,5 +9,5 @@ tellraw @s[scores={lvl_Swim=8}] [{"text":"Swim ","bold":true},{"text":"8","color
 tellraw @s[scores={lvl_Swim=9}] [{"text":"Swim ","bold":true},{"text":"9","color":"dark_gray"},{"text":" - Distance Swom in blocks: ","bold":false},{"score":{"name":"@s","objective":"lvl_Swim_block"},"color":"gray","bold":false},{"text":"/","bold":false},{"score":{"name":"Swimming_10","objective":"lvl_Requirements"},"color":"gray","bold":false}]
 tellraw @s[scores={lvl_Swim=10}] [{"text":"Swim ","bold":true},{"text":"10","color":"dark_gray"},{"text":" - Distance Swom in blocks: ","bold":false},{"score":{"name":"@s","objective":"lvl_Swim_block"},"color":"gray","bold":false},{"text":"/MAXIMUM"}]
 
-tellraw @s[scores={lvl_Swim=1..,lvl_Swimf=0}] ["- Dolphins Grace",{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","clickEvent":{"action":"run_command","value":"/trigger lvl_Swimf add 1"}}]
-tellraw @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] ["- Dolphins Grace",{"text":" Active","color":"aqua"},{"text":" [-]","color":"red","clickEvent":{"action":"run_command","value":"/trigger lvl_Swimf add -1"}}]
+tellraw @s[scores={lvl_Swim=1..,lvl_Swimf=0}] ["- Dolphins Grace",{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","click_event":{"action":"run_command",command:"/trigger lvl_Swimf add 1"}}]
+tellraw @s[scores={lvl_Swim=1..,lvl_Swimf=1..}] ["- Dolphins Grace",{"text":" Active","color":"aqua"},{"text":" [-]","color":"red","click_event":{"action":"run_command",command:"/trigger lvl_Swimf add -1"}}]
