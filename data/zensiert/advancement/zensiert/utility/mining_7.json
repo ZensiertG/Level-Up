@@ -14,7 +14,7 @@
                     "type": "minecraft:score",
                     "target": {
                       "type": "minecraft:fixed",
-                      "name": "Mining_2"
+                      "name": "Mining_7"
                     },
                     "score": "lvl_Requirements"
                   }
