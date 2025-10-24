@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 71,
+    "pack_format": 88,
     "description": [
 			{
 				"text": "Level Up v2",
@@ -10,6 +10,9 @@
 				"text": "\nmodrinth.com/datapack/level-up",
 				"color": "yellow"
 			}
-		]
+		],
+        "min_format": [71, 0],
+		"max_format": [88, 0],
+		"supported_formats": [71, 88]
   }
 }
