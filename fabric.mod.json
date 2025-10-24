@@ -1,0 +1,15 @@
+{
+	"schemaVersion":1,
+	"id":"mr_level_up",
+	"version":"2.0.3",
+	"name":"Level Up",
+	"description":"Level Up\nis a Skill Datapack. Level your Skills by playing.",
+	"authors":["Zensiert"],
+	"contact":{"homepage":"https://modrinth.com/datapack/level-up"},
+	"license":"GPL-3.0-only",
+	"icon":"pack.png",
+	"environment":"*",
+	"depends":{
+		"fabric-resource-loader-v0":"*"
+	}
+}

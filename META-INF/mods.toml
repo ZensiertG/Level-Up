@@ -1,0 +1,16 @@
+modLoader = 'lowcodefml'
+loaderVersion = '[40,)'
+license = 'GPL-3.0-only'
+showAsResourcePack = false
+mods = [
+	{
+		modId = 'zen_level_up',
+	 	version = '2.0.3',
+	  	displayName = 'Level Up',
+		description = "Level Up\nis a Skill Datapack. Level your Skills by playing.",
+		logoFile = 'pack.png',
+		updateJSONURL = 'https://api.modrinth.com/updates/eL35qVRr/forge_updates.json',
+		authors = 'Zensiert',
+		displayURL = 'https://modrinth.com/datapack/level-up' 
+	}
+]
