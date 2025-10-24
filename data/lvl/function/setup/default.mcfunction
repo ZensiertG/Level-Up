@@ -118,6 +118,7 @@ scoreboard players set Skeleton_1 lvl_Requirements 99
 scoreboard players set Drowned_1 lvl_Requirements 79
 scoreboard players set Creeper_1 lvl_Requirements 59
 scoreboard players set Guardian_1 lvl_Requirements 29
+scoreboard players set Elder_Guardian lvl_Requirements 2
 scoreboard players set Enderman_1 lvl_Requirements 74
 scoreboard players set Ghast_1 lvl_Requirements 24
 scoreboard players set Hoglin_1 lvl_Requirements 49

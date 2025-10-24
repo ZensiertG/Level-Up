@@ -1,0 +1,56 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:player_head",
+        "count": 1,
+        "components": {
+          "minecraft:profile": {
+            "properties": [
+              {
+                "name": "textures",
+                "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJkZDI1NzllZDViYjE4NTM4MDVmZjYzNDFkNDExOGI0YTRmNDg1ZmIwN2FkNTUwMzIwYTg2YWM1ODZiYTk5MyJ9fX0="
+              }
+            ]
+          }
+        }
+      },
+      "title": "Elder Guardian Killer",
+      "description": "Clear a Ocean Monument of it's Elder Guardians. Unlucks immunity to Mining Fatigue",
+      "show_toast": false,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "zensiert:zensiert/combat/guardiankiller",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_killed_entity",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lvl_KillElderGuardian": {
+                  "min": {
+                    "type": "minecraft:score",
+                    "target": {
+                      "type": "minecraft:fixed",
+                      "name": "Elder_Guardian"
+                    },
+                    "score": "lvl_Requirements"
+                  }
+                }
+              }
+            }
+          ],
+          "entity": {
+            "type": "minecraft:elder_guardian"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "lvl:advancements/skills/combat/elderguardiankiller"
+    }
+  }
+  

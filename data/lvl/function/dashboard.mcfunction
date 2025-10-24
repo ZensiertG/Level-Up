@@ -12,6 +12,8 @@ scoreboard players enable @s lvl_Firef
 scoreboard players enable @s lvl_Regenf
 scoreboard players enable @s lvl_Heartsf
 scoreboard players enable @s lvl_Armorf
+scoreboard players enable @s lvl_Fatigue_Immunity
+execute as @a run scoreboard players operation @s lvl_Fatigue_Immunitys = @s lvl_Fatigue_Immunity
 
 tellraw @s {"text":"Dashboard ↻","bold":true,"color":"green","click_event":{"action":"run_command",command:"/trigger Dashboard"}}
 

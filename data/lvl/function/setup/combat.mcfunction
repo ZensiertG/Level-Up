@@ -9,6 +9,8 @@ scoreboard objectives add lvl_Firefs trigger
 scoreboard objectives add lvl_Regen dummy
 scoreboard objectives add lvl_Regenf trigger
 scoreboard objectives add lvl_Regenfs trigger
+scoreboard objectives add lvl_Fatigue_Immunity trigger
+scoreboard objectives add lvl_Fatigue_Immunitys trigger
 scoreboard objectives add lvl_KillEnderdragon minecraft.killed:minecraft.ender_dragon
 scoreboard objectives add lvl_KillWither minecraft.killed:minecraft.wither
 scoreboard objectives add lvl_KillBlaze minecraft.killed:minecraft.blaze
@@ -19,6 +21,7 @@ scoreboard objectives add lvl_KillSkeleton minecraft.killed:minecraft.skeleton
 scoreboard objectives add lvl_KillDrowned minecraft.killed:minecraft.drowned
 scoreboard objectives add lvl_KillCreeper minecraft.killed:minecraft.creeper
 scoreboard objectives add lvl_KillGuardian minecraft.killed:minecraft.guardian
+scoreboard objectives add lvl_KillElderGuardian minecraft.killed:minecraft.elder_guardian
 scoreboard objectives add lvl_KillEnderman minecraft.killed:minecraft.enderman
 scoreboard objectives add lvl_KillGhast minecraft.killed:minecraft.ghast
 scoreboard objectives add lvl_KillHoglin minecraft.killed:minecraft.hoglin

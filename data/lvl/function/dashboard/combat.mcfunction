@@ -5,8 +5,11 @@ execute as @s if score @s lvl_Armor > @s lvl_Armorf if score @s lvl_Armorf > 0 l
 execute as @s[scores={lvl_Armor=1..}] if score @s lvl_Armorf = 0 lvl_math run tellraw @s ["Additional Armor Points",{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","click_event":{"action":"run_command",command:"/trigger lvl_Armorf add 1"}}]
 
 tellraw @s[scores={lvl_Fire=1,lvl_Firef=0}] ["- Fire Resistance",{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","click_event":{"action":"run_command",command:"/trigger lvl_Firef add 1"}}]
-tellraw @s[scores={lvl_Fire=1,lvl_Firef=1}] ["- Fire Resistance",{"text":" Active ","color":"aqua"},{"text":"[-] ","color":"red","click_event":{"action":"run_command",command:"/trigger lvl_Firef add -1"}},{"text":"Max","color":"dark_red"}]
+tellraw @s[scores={lvl_Fire=1,lvl_Firef=1}] ["- Fire Resistance",{"text":" Active ","color":"aqua"},{"text":"[-] ","color":"red","click_event":{"action":"run_command",command:"/trigger lvl_Firef add -1"}}]
 
 execute as @s if score @s lvl_Regen <= @s lvl_Regenf if score @s lvl_Regen <= 6 lvl_math if score @s lvl_Regenf > 0 lvl_math run tellraw @s ["- Regeneration",{"text":" Active ","color":"aqua"},{"text":"[-] ","color":"red","click_event":{"action":"run_command",command:"/trigger lvl_Regenf add -1"}},{"text":"Max","color":"dark_red"}]
 execute as @s if score @s lvl_Regen > @s lvl_Regenf if score @s lvl_Regenf > 0 lvl_math run tellraw @s ["- Regeneration",{"text":" Active ","color":"aqua"},{"text":"[-] ","color":"red","click_event":{"action":"run_command",command:"/trigger lvl_Regenf add -1"}},{"score":{"name":"@s","objective":"lvl_Regenf"},"color":"dark_gray"},{"text":" [+]","color":"dark_green","click_event":{"action":"run_command",command:"/trigger lvl_Regenf add 1"}}]
 execute as @s[scores={lvl_Regen=1..}] if score @s lvl_Regenf = 0 lvl_math run tellraw @s ["- Regeneration",{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","click_event":{"action":"run_command",command:"/trigger lvl_Regenf add 1"}}]
+
+tellraw @s[scores={lvl_KillElderGuardian=3..,lvl_Fatigue_Immunity=0}] ["- Mining Fatigue Immunity",{"text":" Deactivated","color":"gray"},{"text":" [+]","color":"dark_green","click_event":{"action":"run_command",command:"/trigger lvl_Fatigue_Immunity add 1"}}]
+tellraw @s[scores={lvl_KillElderGuardian=3..,lvl_Fatigue_Immunity=1}] ["- Mining Fatigue Immunity",{"text":" Active ","color":"aqua"},{"text":"[-] ","color":"red","click_event":{"action":"run_command",command:"/trigger lvl_Fatigue_Immunity add -1"}}]

@@ -1,0 +1,52 @@
+{
+    "parent": "zensiert:zensiert/combat/guardiankiller",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+                "effects": {
+                    "minecraft:mining_fatigue": {
+                        "amplifier": {
+                            "min": 1,
+                            "max": 255
+                        }
+                    }
+                },
+                "player": [
+                    {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "type_specific": {
+                        "type": "minecraft:player",
+                        "advancements": {
+                          "zensiert:zensiert/combat/elderguardiankiller": true
+                                }
+                            }
+                        }
+                    },
+                    {
+                      "condition": "minecraft:entity_scores",
+                      "entity": "this",
+                      "scores": {
+                        "lvl_Fatigue_Immunity": {
+                          "min": {
+                            "type": "minecraft:score",
+                            "target": {
+                              "type": "minecraft:fixed",
+                              "name": "1"
+                            },
+                            "score": "lvl_math"
+                    }
+                }
+              }
+            }
+                ]
+            }
+        }
+    },
+    "rewards": {
+      "function": "lvl:advancements/skills/combat/clear_mining_fatigue"
+    }
+  }
+  
