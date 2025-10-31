@@ -27,6 +27,7 @@ execute as @a unless score @s lvl_Regenf = @s lvl_Regenfs run function lvl:reset
 execute as @a unless score @s lvl_Divingf = @s lvl_Divingfs run function lvl:reset-attributes
 execute as @a unless score @s lvl_Sprintf = @s lvl_Sprintfs run function lvl:reset-attributes
 execute as @a unless score @s lvl_Fatigue_Immunity = @s lvl_Fatigue_Immunitys run function lvl:dashboard
+execute as @a unless score @s lvl_Levitation_Immunity = @s lvl_Levitation_Immunitys run function lvl:dashboard
 
 #Walk
 execute as @a unless score @s lvl_Walk >= 1 lvl_math run advancement revoke @s from zensiert:zensiert/walking

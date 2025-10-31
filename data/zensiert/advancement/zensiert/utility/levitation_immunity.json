@@ -1,13 +1,13 @@
 {
-    "parent": "zensiert:zensiert/combat/elderguardiankiller",
+    "parent": "zensiert:zensiert/combat/shulkerkiller",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:effects_changed",
         "conditions": {
                 "effects": {
-                    "minecraft:mining_fatigue": {
+                    "minecraft:levitation": {
                         "amplifier": {
-                            "min": 1,
+                            "min": 0,
                             "max": 255
                         }
                     }
@@ -20,7 +20,7 @@
                       "type_specific": {
                         "type": "minecraft:player",
                         "advancements": {
-                          "zensiert:zensiert/combat/elderguardiankiller": true
+                          "zensiert:zensiert/combat/shulkerkiller": true
                                 }
                             }
                         }
@@ -29,7 +29,7 @@
                       "condition": "minecraft:entity_scores",
                       "entity": "this",
                       "scores": {
-                        "lvl_Fatigue_Immunity": {
+                        "lvl_Levitation_Immunity": {
                           "min": {
                             "type": "minecraft:score",
                             "target": {
@@ -46,7 +46,7 @@
         }
     },
     "rewards": {
-      "function": "lvl:advancements/skills/combat/clear_mining_fatigue"
+      "function": "lvl:advancements/skills/combat/clear_levitation"
     }
   }
   

@@ -9,6 +9,10 @@ scoreboard objectives remove lvl_Firefs
 scoreboard objectives remove lvl_Regen
 scoreboard objectives remove lvl_Regenf 
 scoreboard objectives remove lvl_Regenfs 
+scoreboard objectives remove lvl_Fatigue_Immunity 
+scoreboard objectives remove lvl_Fatigue_Immunitys 
+scoreboard objectives remove lvl_Levitation_Immunity 
+scoreboard objectives remove lvl_Levitation_Immunitys 
 scoreboard objectives remove lvl_KillEnderdragon 
 scoreboard objectives remove lvl_KillWither 
 scoreboard objectives remove lvl_KillBlaze 
@@ -29,3 +33,4 @@ scoreboard objectives remove lvl_KillRavager
 scoreboard objectives remove lvl_KillShulker 
 scoreboard objectives remove lvl_KillSlime 
 scoreboard objectives remove lvl_KillWitch 
+scoreboard objectives remove lvl_KillElderGuardian

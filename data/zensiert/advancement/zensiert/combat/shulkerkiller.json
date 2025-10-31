@@ -15,7 +15,7 @@
         }
       },
       "title": "Shulkerkiller",
-      "description": "Kill Shulker",
+      "description": "Slaughtering all the Shulkers. Grants Levitation Immunity",
       "show_toast": false,
       "announce_to_chat": true,
       "hidden": false
@@ -50,7 +50,7 @@
       }
     },
     "rewards": {
-      "function": "lvl:advancements/skills/combat/combatupgrade"
+      "function": "lvl:advancements/skills/combat/shulkerkiller"
     }
   }
   

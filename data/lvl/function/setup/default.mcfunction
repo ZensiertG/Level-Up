@@ -126,7 +126,7 @@ scoreboard players set Piglin_1 lvl_Requirements 149
 scoreboard players set Brute_1 lvl_Requirements 9
 scoreboard players set Pillager_1 lvl_Requirements 99
 scoreboard players set Ravager_1 lvl_Requirements 14
-scoreboard players set Shulker_1 lvl_Requirements 49
+scoreboard players set Shulker_1 lvl_Requirements 99
 scoreboard players set Slime_1 lvl_Requirements 99
 scoreboard players set Witch_1 lvl_Requirements 14
 

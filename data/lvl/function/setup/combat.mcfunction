@@ -11,6 +11,8 @@ scoreboard objectives add lvl_Regenf trigger
 scoreboard objectives add lvl_Regenfs trigger
 scoreboard objectives add lvl_Fatigue_Immunity trigger
 scoreboard objectives add lvl_Fatigue_Immunitys trigger
+scoreboard objectives add lvl_Levitation_Immunity trigger
+scoreboard objectives add lvl_Levitation_Immunitys trigger
 scoreboard objectives add lvl_KillEnderdragon minecraft.killed:minecraft.ender_dragon
 scoreboard objectives add lvl_KillWither minecraft.killed:minecraft.wither
 scoreboard objectives add lvl_KillBlaze minecraft.killed:minecraft.blaze
